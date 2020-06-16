@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controller/thirdPartyControllers');
 
-const { randomUsersDataController } = controller;
+const { moviesPosterDescriptionController } = controller;
 
-router.get('/movies', randomUsersDataController);
+router.get('/movies', moviesPosterDescriptionController);
 
 module.exports = router;
